@@ -27,6 +27,7 @@ class StoreProjectRequest extends FormRequest
             'image' => 'required',
             'technology' => 'required',
             'repo_links' => 'required',
+            'type-id' => 'nullable|exists:types,id',
         ];
     }
 
@@ -34,6 +35,7 @@ class StoreProjectRequest extends FormRequest
         return [
             'max' => 'Il campo :attribute deve avere massimo :max caratteri',
             'required' => 'Il campo :attribute non è stato inserito',
+            'exists' => 'Eh voleeeeviiii',
         ];
     }
 }
