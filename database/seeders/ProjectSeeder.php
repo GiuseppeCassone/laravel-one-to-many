@@ -13,18 +13,14 @@ class ProjectSeeder extends Seeder
      */
     public function run(): void
     {
-        $projects = config('projects');
+            // $newProject = new Project();
 
-        foreach($projects as $project) {
-            $newProject = new Project();
+            // $newProject->name = $project['name'];
+            // $newProject->description = $project['description'];
+            // $newProject->image = $project['image'];
+            // $newProject->technology = $project['technology'];
+            // $newProject->repo_links = $project['repo_links'];
 
-            $newProject->name = $project['name'];
-            $newProject->description = $project['description'];
-            $newProject->image = $project['image'];
-            $newProject->technology = $project['technology'];
-            $newProject->repo_links = $project['repo_links'];
-
-            $newProject->save();
-        }
+            // $newProject->save();
     }
 }
