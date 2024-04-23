@@ -5,6 +5,7 @@
     <h1>Pagina show</h1>
 
     <h3 class="mb-5">{{$project->name}}</h3>
+    <p>{{$project->type?->title}}</p>
     <div class="row">
         <div class="col-6">
             <img class="w-100" src="{{asset('storage/' . $project->image)}}" alt="">
